@@ -61,7 +61,7 @@ carForm.addEventListener('submit', event => {
 // Function to remove a car
 function removeCar(index) {
     const carId = cars[index].id;
-    fetch(`cars/${carId}`, {
+    fetch(`/cars/${carId}`, {
         method: 'DELETE'
     })
         .then(response => response.json())
