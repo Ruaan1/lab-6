@@ -27,9 +27,10 @@ document.addEventListener('DOMContentLoaded', () => {
             });
     });
 });
+
 //addCar
 function addCar(newCar) {
-    fetch('/cars', {
+    fetch('https://agreeable-pond-06fe23f03.5.azurestaticapps.net/api/cars', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
